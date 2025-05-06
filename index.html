@@ -2,54 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Personal Portfolio Website - Venki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio - Venkateswara Reddy</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
+    <!-- Header Section -->
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/th.01.jpg" class="logo">
+                <div class="logo"> <!-- Placeholder for logo image -->
+                    <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1746466138/2_cz5k0m.jpg" alt="Logo">
+                </div>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Java Developer</p>
-                <h1>Hi, I'm <span>Venki</span> <br> From India</h1>
+                <h1>Hi, I'm <span>Venkateswara Reddy</span><br>From India</h1>
             </div>
         </div>
     </div>
 
-    <!-------------------- About Section ---------------->
-    <div id="About">
+    <!-- About Section -->
+    <div id="about">
         <div class="container">
             <div class="row">
-                <div class="About-col-1">
-                    <img src="images/img2.jpg">
+                <div class="about-col-1">
+                    <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1746466139/1_wrnp8k.jpg" alt="Profile Image"> <!-- Placeholder for profile image -->
                 </div>
-                <div class="About-col-2">
+                <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p><strong>Hi, I'm Venkateswarareddy.</strong><br>  
-                        <strong>I'm currently pursuing an MCA.</strong><br>  
-                        <strong>I'm passionate about learning and growing in the tech field.</strong><br>  
-                        <strong>I enjoy exploring new opportunities and challenges.</strong></p>
+                    <p>
+                        I'm Venkateswara Reddy, a passionate Java Developer currently pursuing an MCA. I thrive on solving complex problems and am dedicated to continuous learning in the tech field. My journey involves exploring new technologies and tackling challenges to create impactful solutions.
+                    </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="Opentab(event, 'Skills')">Skills</p>
-                        <p class="tab-links" onclick="Opentab(event, 'Projects')">Projects</p>
-                        <p class="tab-links" onclick="Opentab(event, 'Education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="Skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Java</span></li>
                             <li><span>HTML</span></li>
@@ -58,166 +57,162 @@
                             <li><span>SQL</span></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="Projects">
+                    <div class="tab-contents" id="projects">
                         <ul>
-                            <li><span>Project 1</span></li>
-                            <li><span>Project 2</span></li>
+                            <li><span>E-Commerce Website</span><br>A fully responsive online store built with HTML, CSS, and JavaScript.</li>
+                            <li><span>Library Management System</span><br>A Java-based application for managing library operations with SQL integration.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="Education">
+                    <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Pursuing</span><br> MCA (Master of Computer Applications)</li>
-                            <li><span>2022-2024</span><br> BCA (Bachelor of Computer Applications)</li>
-                            <li><span>2021-2022</span><br> Intermediate (MPC)</li>
-                            <li><span>2019</span><br> SSC (10th)</li>
+                            <li><span>2024-Present</span><br>MCA (Master of Computer Applications)</li>
+                            <li><span>2022-2024</span><br>BCA (Bachelor of Computer Applications)</li>
+                            <li><span>2021-2022</span><br>Intermediate (MPC)</li>
+                            <li><span>2019</span><br>SSC (10th)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--------------------------portfolio------------------------>
-    <div id="portfolio">
-        <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-        <div class="work">
-        <img src="images/work-1.png">
-        <div class="layer">
-            <h3> work1</h3>
-            <p>fde dwfedwfc defcced de f edde ed ededd eded eded ed ed</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> hello</a>
-        </div>
-    
-        </div> 
-        <div class="work">
-            <img src="images/work-1.png">
-            
-            <div class="layer">
-                <h3> work2</h3>
-                <p>fde dwfedwfc defcced de f edde ed ededd eded eded ed ed</p>
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> hello</a>
-            </div>
-            </div> 
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3> work3</h3>
-                    <p>fde dwfedwfc defcced de f edde ed ededd eded eded ed ed</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> hello</a>
-                </div>
-                </div> 
-        
 
-    </div>
-    <!---------------------- Services Section ------------------->
+    <!-- Services Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="service-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2><strong>Web Development</strong></h2>
-                    <p>Details will be added later.</p>
-                    <a href="#">Learn more</a>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and scalable websites using modern technologies like HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
-                    <h2><strong>Web Design</strong></h2>
-                    <p>Details will be added later.</p>
-                    <a href="#">Learn more</a>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually appealing and user-friendly designs tailored to client needs.</p>
+                    <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-database"></i>
-                    <h2><strong>Database Management</strong></h2>
-                    <p>Details will be added later.</p>
-                    <a href="#">Learn more</a>
+                    <h2>Database Management</h2>
+                    <p>Designing and managing efficient databases using SQL for seamless data operations.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!---------------------- Contact Section ------------------->
-    <div id="contact"> 
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="portfolio-list">
+                <div class="portfolio-card">
+                    <h2>School of Technology</h2>
+                    <p>Explore my work in software development, including projects in Java and web technologies.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Computing</h2>
+                    <p>Dive into my computing projects, focusing on programming and system design.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Commerce and Management</h2>
+                    <p>Check out my contributions to business-related applications and management systems.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Medical Sciences</h2>
+                    <p>Discover my projects in health tech, including database solutions for medical data.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Liberal Arts and Sciences</h2>
+                    <p>View my interdisciplinary projects combining technology with social sciences.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Art and Design</h2>
+                    <p>Explore my creative web design projects showcasing aesthetic and functional designs.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Agriculture</h2>
+                    <p>Learn about my tech solutions for agriculture, including data management systems.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Media Studies</h2>
+                    <p>Check out my media-related projects, including dynamic web applications.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h2>School of Film Academy</h2>
+                    <p>Discover my work in tech solutions for film production and media management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section with Get in Touch -->
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> vvenkateswarareddy83@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 9573092837</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/venkateswara-reddy-vemireddy-5a0872235">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/venkireddy39">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <div class="get-in-touch">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-step">
+                            <p><strong>Step 1: Email Me</strong></p>
+                            <p><i class="fa-solid fa-envelope"></i> vvenkateswarareddy83@gmail.com</p>
+                        </div>
+                        <div class="contact-step">
+                            <p><strong>Step 2: Call Me</strong></p>
+                            <p><i class="fa-solid fa-phone"></i> 9573092837</p>
+                        </div>
+                        <div class="contact-step">
+                            <p><strong>Step 3: Message Me on WhatsApp</strong></p>
+                            <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919573092837" target="_blank">Contact via WhatsApp</a></p>
+                        </div>
+                        <div class="contact-step">
+                            <p><strong>Step 4: Connect on Social Media</strong></p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/venkateswara-reddy-vemireddy-5a0872235"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/venkiteswarareddy39"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-step">
+                            <p><strong>Step 5: Download My Resume</strong></p>
+                            <a href="" download class="btn btn2">Download Resume</a> <!-- Placeholder for resume file -->
+                        </div>
                     </div>
-                    <a href="images/Venkateswara Reddy resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form id="contact-form">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="copyright">
-            <p><strong>Copyright © Venki. Designed & Developed by Venkateswara Reddy Vemireddy</strong> ❤️</p>
+            <p>Copyright © 2025 Venkateswara Reddy. All Rights Reserved.</p>
         </div>
-        
-    </div> 
+    </div>
 
-    <!---------------------- JavaScript ------------------->
+    <!-- JavaScript for WhatsApp Submission -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function Opentab(event, tabname) { 
-            for (var tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (var tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = this.elements["Name"].value;
+            const email = this.elements["email"].value;
+            const message = this.elements["Message"].value;
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+            const whatsappURL = `https://wa.me/919573092837?text=${whatsappMessage}`;
+            window.open(whatsappURL, "_blank");
+        });
     </script>
-    <script>
-
-        var sidemeu =document.getElementById("sidemenu")
-        function openmenu(){
-            sidemeu.style.right ="0";
-        }
-        function closemenu(){
-                sidemeu.style.right ="-200px";   
-            
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdpms4EmIaRFwPLXyskcZgDhsgGwWjEXI2NEuR4rFRaME5ib7DQ4BYAz5qzUpvY-h5Wg/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                    msg.innerHTML = "Message Sent Successfully"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    },1000)
-                    form.reset()   
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
